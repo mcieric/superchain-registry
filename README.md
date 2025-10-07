@@ -39,3 +39,14 @@ This is explained in more detail in this [specification on hardfork activation i
 ## License
 
 MIT License, see [`LICENSE` file](./LICENSE).
+
+---
+
+## How to run locally
+
+1. Install dependencies
+   ```bash
+   corepack enable
+   corepack prepare yarn@1.22.22 --activate
+   yarn install
+
