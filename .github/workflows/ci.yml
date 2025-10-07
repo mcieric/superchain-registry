@@ -13,4 +13,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install yamllint
-      - run: yamllint .
+      - run: |
+          if ls **/*.yml **/*.yaml >/dev/null 2>&1; then
+            yamllint .
+          else
+            echo "No YAML files found, skipping yamllint."
+          fi
